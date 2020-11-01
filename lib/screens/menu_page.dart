@@ -31,13 +31,15 @@ class MenuPage extends StatelessWidget {
                   ),
                 ),
                 Positioned(
-                  left: 25.0,
-                  bottom: 17.0,
+                  left: 35.0,
+                  bottom: 15.0,
                   child: Text(
                     'Learn',
                     style: TextStyle(
                       fontSize: 40.0,
                       fontWeight: FontWeight.bold,
+                      fontFamily: 'Lobster',
+                      color: Color(0xFF1A303D),
                     ),
                   ),
                 ),
@@ -46,22 +48,55 @@ class MenuPage extends StatelessWidget {
             SizedBox(
               height: 30.0,
             ),
-            ClipRRect(
-              borderRadius: BorderRadius.all(Radius.circular(20.0)),
-              child: Image.asset(
-                'assets/images/games.jpg',
-                height: 180.0,
-              ),
+            Stack(
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                  child: Image.asset(
+                    'assets/images/games.jpg',
+                    height: 180.0,
+                  ),
+                ),
+                Positioned(
+                  right: 50.0,
+                  child: Text(
+                    'Games &\nQuizzes',
+                    style: TextStyle(
+                      fontSize: 30.0,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Lobster',
+                      color: Color(0xFF2A2B40),
+                    ),
+                  ),
+                ),
+              ],
             ),
             SizedBox(
               height: 30.0,
             ),
-            ClipRRect(
-              borderRadius: BorderRadius.all(Radius.circular(20.0)),
-              child: Image.asset(
-                'assets/images/resources.png',
-                height: 180.0,
-              ),
+            Stack(
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                  child: Image.asset(
+                    'assets/images/resources.png',
+                    height: 180.0,
+                  ),
+                ),
+                Positioned(
+                  bottom: 0.0,
+                  left: 90.0,
+                  child: Text(
+                    'Resources',
+                    style: TextStyle(
+                      fontSize: 30.0,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Lobster',
+                      color: Color(0xFF492D41),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
