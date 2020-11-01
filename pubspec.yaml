@@ -30,6 +30,7 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/images/alphabets/
   fonts:
     - family: Lobster
       fonts:
