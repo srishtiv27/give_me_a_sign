@@ -31,11 +31,11 @@ flutter:
   assets:
     - assets/images/
     - assets/images/alphabets/
-
     - assets/images/numbers/
-
     - assets/images/months/
     - assets/images/days/
+    - assets/images/colour_cards/
+
 
   fonts:
     - family: Lobster
