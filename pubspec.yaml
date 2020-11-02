@@ -35,6 +35,7 @@ flutter:
     - assets/images/months/
     - assets/images/days/
     - assets/images/colour_cards/
+    - assets/images/family_cards/
 
 
   fonts:
