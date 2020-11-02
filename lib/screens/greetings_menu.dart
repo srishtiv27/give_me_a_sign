@@ -81,7 +81,7 @@ class GreetingsMenu extends StatelessWidget {
                   LearnCard(
                     image: 'assets/images/greetings_cards/how_are_you.png',
                     label: 'How are you?',
-                    color: Color(0xFF234938),
+                    color: Color(0xFFF44020),
                     left: 12,
                   ),
                 ],
