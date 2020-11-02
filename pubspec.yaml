@@ -38,6 +38,7 @@ flutter:
     - assets/images/food_cards/
     - assets/images/animal_cards/
     - assets/images/emotions_cards/
+    - assets/images/greetings_cards/
 
   fonts:
     - family: Lobster
