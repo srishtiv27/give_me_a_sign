@@ -67,10 +67,10 @@ class AlphabetsPage extends StatelessWidget {
                 height: 400,
                 viewportFraction: 0.8,
                 enlargeCenterPage: true,
-//                autoPlay: true,
-//                autoPlayInterval: Duration(
-//                  seconds: 3,
-//                ),
+                autoPlay: true,
+                autoPlayInterval: Duration(
+                  seconds: 3,
+                ),
               ),
               items: buildIndex().map((i) {
                 return Builder(

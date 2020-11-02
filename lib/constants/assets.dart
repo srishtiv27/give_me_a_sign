@@ -47,3 +47,25 @@ const String k19 = 'assets/images/numbers/19.gif';
 const String k20 = 'assets/images/numbers/20.gif';
 const String k50 = 'assets/images/numbers/50.gif';
 const String k100 = 'assets/images/numbers/100.gif';
+
+const String kMonday = 'assets/images/days/Monday.gif';
+const String kTuesday = 'assets/images/days/tuesday.gif';
+const String kWednesday = 'assets/images/days/Wednesday.gif';
+const String kThursday = 'assets/images/days/thursday.gif';
+const String kFriday = 'assets/images/days/Friday.gif';
+const String kSaturday = 'assets/images/days/saturday.gif';
+const String kSunday = 'assets/images/days/Sunday.gif';
+
+const String kJanuary = 'assets/images/months/January.gif';
+const String kFebruary = 'assets/images/months/February.gif';
+const String kMarch = 'assets/images/months/March.gif';
+const String kApril = 'assets/images/months/April.gif';
+const String kMay = 'assets/images/months/May.gif';
+const String kJune = 'assets/images/months/June.gif';
+const String kJuly = 'assets/images/months/July.gif';
+const String kAugust = 'assets/images/months/August.gif';
+const String kSeptember = 'assets/images/months/September.gif';
+const String kOctober = 'assets/images/months/October.gif';
+const String kNovember = 'assets/images/months/November.gif';
+const String kDecember = 'assets/images/months/December.gif';
+
