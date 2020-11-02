@@ -31,7 +31,7 @@ flutter:
   assets:
     - assets/images/
     - assets/images/alphabets/
-    - assets/images/numbers
+    - assets/images/numbers/
   fonts:
     - family: Lobster
       fonts:
