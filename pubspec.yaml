@@ -36,7 +36,8 @@ flutter:
     - assets/images/days/
     - assets/images/colour_cards/
     - assets/images/family_cards/
-
+    - assets/images/food_cards/
+    - assets/images/animal_cards/
 
   fonts:
     - family: Lobster
