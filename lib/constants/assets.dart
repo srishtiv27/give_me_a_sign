@@ -31,7 +31,7 @@ const String kWednesday = 'assets/images/days/Wednesday.gif';
 const String kThursday = 'assets/images/days/thursday.gif';
 const String kFriday = 'assets/images/days/Friday.gif';
 const String kSaturday = 'assets/images/days/saturday.gif';
-const String kSunday = 'assets/images/days/sunday.gif';
+const String kSunday = 'assets/images/days/Sunday.gif';
 
 const String kJanuary = 'assets/images/months/January.gif';
 const String kFebruary = 'assets/images/months/February.gif';
