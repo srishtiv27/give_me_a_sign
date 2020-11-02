@@ -8,9 +8,7 @@ import 'package:give_me_a_sign/screens/family_menu.dart';
 import 'package:give_me_a_sign/screens/food_menu.dart';
 import 'package:give_me_a_sign/screens/learn_menu.dart';
 import 'package:give_me_a_sign/screens/menu_page.dart';
-
 import 'package:give_me_a_sign/screens/numbers_page.dart';
-
 import 'package:give_me_a_sign/screens/months_page.dart';
 
 void main() {
@@ -22,7 +20,7 @@ class GiveMeASign extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Give Me a Sign',
-      initialRoute: AnimalsMenu.id,
+      initialRoute: FoodMenu.id,
       routes: {
         MenuPage.id: (context) => MenuPage(),
         LearnMenu.id: (context) => LearnMenu(),
