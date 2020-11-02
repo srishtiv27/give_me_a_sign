@@ -4,6 +4,7 @@ import 'package:give_me_a_sign/screens/animals_menu.dart';
 import 'package:give_me_a_sign/screens/colours_menu.dart';
 import 'package:give_me_a_sign/screens/days_and_months_menu.dart';
 import 'package:give_me_a_sign/screens/days_page.dart';
+import 'package:give_me_a_sign/screens/emotions_menu.dart';
 import 'package:give_me_a_sign/screens/family_menu.dart';
 import 'package:give_me_a_sign/screens/food_menu.dart';
 import 'package:give_me_a_sign/screens/learn_menu.dart';
@@ -20,7 +21,7 @@ class GiveMeASign extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Give Me a Sign',
-      initialRoute: FoodMenu.id,
+      initialRoute: EmotionsMenu.id,
       routes: {
         MenuPage.id: (context) => MenuPage(),
         LearnMenu.id: (context) => LearnMenu(),
@@ -33,6 +34,7 @@ class GiveMeASign extends StatelessWidget {
         FamilyMenu.id: (context) => FamilyMenu(),
         FoodMenu.id: (context) => FoodMenu(),
         AnimalsMenu.id: (context) => AnimalsMenu(),
+        EmotionsMenu.id: (context) => EmotionsMenu(),
       },
     );
   }
