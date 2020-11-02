@@ -54,7 +54,7 @@ class MonthsPage extends StatelessWidget {
                 height: 400,
                 viewportFraction: 0.8,
                 enlargeCenterPage: true,
-                autoPlay: true,
+//                autoPlay: true,
                 autoPlayInterval: Duration(
                   seconds: 3,
                 ),
