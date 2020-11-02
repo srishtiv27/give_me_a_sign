@@ -31,6 +31,8 @@ flutter:
   assets:
     - assets/images/
     - assets/images/alphabets/
+    - assets/images/months/
+    - assets/images/days/
   fonts:
     - family: Lobster
       fonts:
