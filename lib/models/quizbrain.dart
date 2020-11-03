@@ -53,6 +53,58 @@ class QuizBrain {
     'G'
   ];
 
+  List<Question> challengeQuestionBank = [
+    Question(questionImage: kGrandFatherGif, questionAnswer: 'Grandfather'),
+    Question(questionImage: kSamosaGif, questionAnswer: 'Samosa'),
+    Question(questionImage: kHappyGif, questionAnswer: 'Happy'),
+    Question(questionImage: kPinkGif, questionAnswer: 'Pink'),
+    Question(questionImage: kDogGif, questionAnswer: 'Dog'),
+    Question(questionImage: kMotherGif, questionAnswer: 'Mother'),
+    Question(questionImage: kCakeGif, questionAnswer: 'Cake'),
+    Question(questionImage: kSadGif, questionAnswer: 'Sad'),
+    Question(questionImage: kGreenGif, questionAnswer: 'Green'),
+    Question(questionImage: kCatGif, questionAnswer: 'Cat'),
+  ];
+
+  List<String> challengeOption1 = [
+    'Grandmother',
+    'Violet',
+    'Happy',
+    'Banana',
+    'Dog',
+    'Sister',
+    'Angry',
+    'Sad',
+    'Violet',
+    'Cat'
+  ];
+
+  List<String> challengeOption2 = [
+    'Mother',
+    'Samosa',
+    'Sunday',
+    'Pink',
+    'Bread',
+    'Mother',
+    'Cake',
+    'Monday',
+    'Yellow',
+    'Brother'
+  ];
+
+  List<String> challengeOption3 = [
+    'Grandfather',
+    'Cat',
+    'Good Morning',
+    'Sister',
+    'November',
+    'Apple',
+    'Red',
+    'Water',
+    'Green',
+    'August'
+  ];
+
   void nextQuestion(List<Question> questionBank) {
     if (questionNumber < questionBank.length - 1) {
       questionNumber++;

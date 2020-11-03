@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:give_me_a_sign/screens/alphabets_quiz.dart';
+import 'package:give_me_a_sign/screens/challenge_quiz.dart';
 import 'package:give_me_a_sign/screens/learn_menu.dart';
 import 'package:give_me_a_sign/screens/resources_menu.dart';
 
@@ -83,29 +84,34 @@ class QuizzesMenu extends StatelessWidget {
             SizedBox(
               height: 30.0,
             ),
-            Stack(
-              children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                  child: Image.asset(
-                    'assets/images/quizzes/challenge_quiz.png',
-                    height: 180.0,
-                  ),
-                ),
-                Positioned(
-                  bottom: 8.0,
-                  left: 90.0,
-                  child: Text(
-                    'Challenge',
-                    style: TextStyle(
-                      fontSize: 30.0,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'Lobster',
-                      color: Color(0xFF2D6A89),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, ChallengeQuiz.id);
+              },
+              child: Stack(
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                    child: Image.asset(
+                      'assets/images/quizzes/challenge_quiz.png',
+                      height: 180.0,
                     ),
                   ),
-                ),
-              ],
+                  Positioned(
+                    bottom: 8.0,
+                    left: 90.0,
+                    child: Text(
+                      'Challenge',
+                      style: TextStyle(
+                        fontSize: 30.0,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Lobster',
+                        color: Color(0xFF2D6A89),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
         ),

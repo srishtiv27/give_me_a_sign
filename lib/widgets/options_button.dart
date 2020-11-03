@@ -7,12 +7,15 @@ class OptionButton extends StatelessWidget {
   final Function onPressed;
   final double height;
   final double width;
-  OptionButton(
-      {this.label,
-      this.color,
-      this.onPressed,
-      this.height = 75,
-      this.width = 300});
+  final double fontSize;
+  OptionButton({
+    this.label,
+    this.color,
+    this.onPressed,
+    this.height = 75,
+    this.width = 300,
+    this.fontSize = 50,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +32,7 @@ class OptionButton extends StatelessWidget {
           child: Text(
             label,
             style: TextStyle(
-              fontSize: 50.0,
+              fontSize: fontSize,
               color: Colors.white,
             ),
           ),
