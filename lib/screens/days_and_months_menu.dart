@@ -62,30 +62,35 @@ class DaysAndMonthsMenu extends StatelessWidget {
               onTap: () {
                 Navigator.pushNamed(context, MonthsPage.id);
               },
-              child: Stack(
-                children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                    child: Image.asset(
-                      'assets/images/months.png',
-                      height: 270,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                  Positioned(
-                    bottom: 10.0,
-                    left: 110,
-                    child: Text(
-                      'Months',
-                      style: TextStyle(
-                        fontSize: 40,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: 'Lobster',
-                        color: Color(0xFF3D3D2A),
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, MonthsPage.id);
+                },
+                child: Stack(
+                  children: [
+                    ClipRRect(
+                      borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                      child: Image.asset(
+                        'assets/images/months.png',
+                        height: 270,
+                        fit: BoxFit.cover,
                       ),
                     ),
-                  )
-                ],
+                    Positioned(
+                      bottom: 10.0,
+                      left: 110,
+                      child: Text(
+                        'Months',
+                        style: TextStyle(
+                          fontSize: 40,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'Lobster',
+                          color: Color(0xFF3D3D2A),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           ],

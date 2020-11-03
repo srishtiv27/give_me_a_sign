@@ -39,7 +39,9 @@ flutter:
     - assets/images/animal_cards/
     - assets/images/emotions_cards/
     - assets/images/greetings_cards/
-
+    - assets/images/colours_gifs/
+    - assets/images/colour_splash/
+    - assets/images/family_gifs/
   fonts:
     - family: Lobster
       fonts:

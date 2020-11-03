@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:give_me_a_sign/screens/learn_menu.dart';
 
 class MenuPage extends StatelessWidget {
   static String id = 'menu_page';
@@ -21,29 +22,34 @@ class MenuPage extends StatelessWidget {
             SizedBox(
               height: 30.0,
             ),
-            Stack(
-              children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                  child: Image.asset(
-                    'assets/images/learn.jpg',
-                    height: 180.0,
-                  ),
-                ),
-                Positioned(
-                  left: 35.0,
-                  bottom: 15.0,
-                  child: Text(
-                    'Learn',
-                    style: TextStyle(
-                      fontSize: 40.0,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'Lobster',
-                      color: Color(0xFF1A303D),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, LearnMenu.id);
+              },
+              child: Stack(
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                    child: Image.asset(
+                      'assets/images/learn.jpg',
+                      height: 180.0,
                     ),
                   ),
-                ),
-              ],
+                  Positioned(
+                    left: 35.0,
+                    bottom: 15.0,
+                    child: Text(
+                      'Learn',
+                      style: TextStyle(
+                        fontSize: 40.0,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Lobster',
+                        color: Color(0xFF1A303D),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
             SizedBox(
               height: 30.0,

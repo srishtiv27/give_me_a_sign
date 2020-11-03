@@ -1,4 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:give_me_a_sign/screens/alphabets_page.dart';
+import 'package:give_me_a_sign/screens/animals_menu.dart';
+import 'package:give_me_a_sign/screens/colours_menu.dart';
+import 'package:give_me_a_sign/screens/days_and_months_menu.dart';
+import 'package:give_me_a_sign/screens/emotions_menu.dart';
+import 'package:give_me_a_sign/screens/family_menu.dart';
+import 'package:give_me_a_sign/screens/food_menu.dart';
+import 'package:give_me_a_sign/screens/greetings_menu.dart';
+import 'package:give_me_a_sign/screens/numbers_page.dart';
 import 'package:give_me_a_sign/widgets/learn_card.dart';
 
 class LearnMenu extends StatelessWidget {
@@ -29,6 +38,9 @@ class LearnMenu extends StatelessWidget {
                     image: 'assets/images/alphabet.png',
                     label: 'Alphabets',
                     color: Color(0xFF6D002E),
+                    onPressed: () {
+                      Navigator.pushNamed(context, AlphabetsPage.id);
+                    },
                   ),
                   SizedBox(
                     width: 20.0,
@@ -38,6 +50,9 @@ class LearnMenu extends StatelessWidget {
                     label: 'Numbers',
                     left: 33,
                     color: Color(0xFF185951),
+                    onPressed: () {
+                      Navigator.pushNamed(context, NumbersPage.id);
+                    },
                   )
                 ],
               ),
@@ -51,6 +66,9 @@ class LearnMenu extends StatelessWidget {
                     label: 'Days &\nMonths',
                     left: 40.0,
                     color: Color(0xFF5D5D34),
+                    onPressed: () {
+                      Navigator.pushNamed(context, DaysAndMonthsMenu.id);
+                    },
                   ),
                   SizedBox(
                     width: 20.0,
@@ -60,6 +78,9 @@ class LearnMenu extends StatelessWidget {
                     label: 'Colours',
                     left: 40,
                     color: Color(0XFF0E284D),
+                    onPressed: () {
+                      Navigator.pushNamed(context, ColoursMenu.id);
+                    },
                   )
                 ],
               ),
@@ -73,6 +94,9 @@ class LearnMenu extends StatelessWidget {
                     label: 'Family',
                     left: 40.0,
                     color: Color(0xFF24423B),
+                    onPressed: () {
+                      Navigator.pushNamed(context, FamilyMenu.id);
+                    },
                   ),
                   SizedBox(
                     width: 20.0,
@@ -82,6 +106,9 @@ class LearnMenu extends StatelessWidget {
                     label: 'Greetings',
                     color: Color(0xFF2A2B3D),
                     left: 32,
+                    onPressed: () {
+                      Navigator.pushNamed(context, GreetingsMenu.id);
+                    },
                   ),
                 ],
               ),
@@ -95,6 +122,9 @@ class LearnMenu extends StatelessWidget {
                     label: 'Food',
                     left: 50.0,
                     color: Color(0xFF473E34),
+                    onPressed: () {
+                      Navigator.pushNamed(context, FoodMenu.id);
+                    },
                   ),
                   SizedBox(
                     width: 20.0,
@@ -104,6 +134,9 @@ class LearnMenu extends StatelessWidget {
                     label: 'Animals',
                     left: 35.0,
                     color: Color(0xFF332240),
+                    onPressed: () {
+                      Navigator.pushNamed(context, AnimalsMenu.id);
+                    },
                   ),
                 ],
               ),
@@ -115,6 +148,9 @@ class LearnMenu extends StatelessWidget {
                 label: 'Emotions',
                 left: 33,
                 color: Color(0xFF2D3644),
+                onPressed: () {
+                  Navigator.pushNamed(context, EmotionsMenu.id);
+                },
               )
             ],
           ),
