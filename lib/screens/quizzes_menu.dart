@@ -62,20 +62,20 @@ class QuizzesMenu extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.all(Radius.circular(20.0)),
                   child: Image.asset(
-                    'assets/images/quizzes/days_quiz.png',
+                    'assets/images/quizzes/greetings_quiz.png',
                     height: 180.0,
                   ),
                 ),
                 Positioned(
-                  bottom: 10.0,
-                  left: 45.0,
+                  bottom: 5.0,
+                  left: 90.0,
                   child: Text(
-                    'Days and Months',
+                    'Greetings',
                     style: TextStyle(
                       fontSize: 30.0,
                       fontWeight: FontWeight.bold,
                       fontFamily: 'Lobster',
-                      color: Color(0xFFCEE0FF),
+                      color: Color(0xFF2A4350),
                     ),
                   ),
                 ),
