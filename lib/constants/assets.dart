@@ -95,3 +95,66 @@ const String kGrandFatherGif = 'assets/images/family_gifs/grandfather.gif';
 const String kGrandMotherGif = 'assets/images/family_gifs/grandmother.gif';
 const String kMotherGif = 'assets/images/family_gifs/mother.gif';
 const String kSisterGif = 'assets/images/family_gifs/sister.gif';
+
+const String kHello = 'assets/images/greetings_gifs/hello.gif';
+const String kGoodbye = 'assets/images/greetings_gifs/GoodBye.gif';
+const String kGoodMorning = 'assets/images/greetings_gifs/GoodMorning.gif';
+const String kGoodAfternoon = 'assets/images/greetings_gifs/GoodAfternoon.gif';
+const String kAllTheBest = 'assets/images/greetings_gifs/AllTheBest.gif';
+const String kHowAreYou = 'assets/images/greetings_gifs/how_are_you.gif';
+const String kThankYou = 'assets/images/greetings_gifs/thankyou.gif';
+const String kGoodNight = 'assets/images/greetings_gifs/goodnight.gif';
+
+const String kApple = 'assets/images/food_gifs/apple.gif';
+const String kBanana = 'assets/images/food_gifs/Banana.gif';
+const String kBread = 'assets/images/food_gifs/bread.gif';
+const String kCake = 'assets/images/food_gifs/cake.gif';
+const String kIceCream = 'assets/images/food_gifs/Icecream.gif';
+const String kMilk = 'assets/images/food_gifs/milk.gif';
+const String kSamosa = 'assets/images/food_gifs/samosa.gif';
+const String kWater = 'assets/images/food_gifs/water.gif';
+
+const String kDogGif = 'assets/images/animals_gifs/dog.gif';
+const String kCatGif = 'assets/images/animals_gifs/cat.gif';
+const String kBirdGif = 'assets/images/animals_gifs/bird.gif';
+const String kFishGif = 'assets/images/animals_gifs/fish.gif';
+
+const String kAngryGif = 'assets/images/emotions_gifs/angry.gif';
+const String kHappyGif = 'assets/images/emotions_gifs/happy.gif';
+const String kSadGif = 'assets/images/emotions_gifs/sad.gif';
+const String kSorryGif = 'assets/images/emotions_gifs/sorry.gif';
+
+const String kBrotherIcon = 'assets/images/family/brother_page.png';
+const String kFatherIcon = 'assets/images/family/father_page.png';
+const String kGrandFatherIcon = 'assets/images/family/grandfather_page.png';
+const String kGrandMotherIcon = 'assets/images/family/grandmother_page.png';
+const String kMotherIcon = 'assets/images/family/mother_page.png';
+const String kSisterIcon = 'assets/images/family/sister_page.png';
+
+const String kAppleIcon = 'assets/images/food/apple_page.png';
+const String kBananaIcon = 'assets/images/food/banana_page.png';
+const String kBreadIcon = 'assets/images/food/bread_page.png';
+const String kCakeIcon = 'assets/images/food/cake_page.png';
+const String kIceCreamIcon = 'assets/images/food/icecream_page.png';
+const String kMilkIcon = 'assets/images/food/milk_page.png';
+const String kSamosaIcon = 'assets/images/food/samosa_page.png';
+const String kWaterIcon = 'assets/images/food/water_page.png';
+
+const String kDogIcon = 'assets/images/animal/dog.png';
+const String kCatIcon = 'assets/images/animal/cat.png';
+const String kBirdIcon = 'assets/images/animal/bird.png';
+const String kFishIcon = 'assets/images/animal/fish.png';
+
+const String kHelloIcon = 'assets/images/greetings/hello.png';
+const String kAllTheBestIcon = 'assets/images/greetings/all_the_best.png';
+const String kGoodAfternoonIcon = 'assets/images/greetings/good_afternoon.png';
+const String kGoodMorningIcon = 'assets/images/greetings/good_morning.png';
+const String kGoodNightIcon = 'assets/images/greetings/good_night.png';
+const String kGoodByeIcon = 'assets/images/greetings/goodbye.png';
+const String kHowAreYouIcon = 'assets/images/greetings/how_are_you.png';
+const String kThankYouIcon = 'assets/images/greetings/thank_you.png';
+
+const String kAngryIcon = 'assets/images/emotions/angry.png';
+const String kHappyIcon = 'assets/images/emotions/happy.png';
+const String kSadIcon = 'assets/images/emotions/sad.png';
+const String kSorryIcon = 'assets/images/emotions/sorry.png';
