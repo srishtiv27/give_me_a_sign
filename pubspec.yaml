@@ -42,6 +42,9 @@ flutter:
     - assets/images/colours_gifs/
     - assets/images/colour_splash/
     - assets/images/family_gifs/
+
+
+    - assets/images/animals_gifs/
   fonts:
     - family: Lobster
       fonts:
