@@ -51,9 +51,7 @@ flutter:
     - assets/images/family/
     - assets/images/emotions/
     - assets/images/animal/
-
-
-
+    - assets/images/resources/
 
   fonts:
     - family: Lobster
