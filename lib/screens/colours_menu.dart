@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:give_me_a_sign/screens/card_page.dart';
 import 'package:give_me_a_sign/widgets/learn_card.dart';
+import 'package:give_me_a_sign/models/cards.dart';
 
 class ColoursMenu extends StatelessWidget {
   static String id = 'colours_menu';
@@ -30,6 +32,18 @@ class ColoursMenu extends StatelessWidget {
                     label: 'Violet',
                     color: Color(0xFF9133FA),
                     left: 45.0,
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Violet',
+                              image:
+                                  'assets/images/colour_splash/violet_splash.png',
+                              gif: 'assets/images/colours_gifs/violet.gif'),
+                        );
+                      }));
+                    },
                   ),
                   SizedBox(
                     width: 20.0,

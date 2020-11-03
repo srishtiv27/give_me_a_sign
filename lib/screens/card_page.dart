@@ -27,7 +27,10 @@ class CardPage extends StatelessWidget {
             SizedBox(
               height: 30.0,
             ),
-            Image.asset(card.gif),
+            Image.asset(
+              card.gif,
+              height: 350,
+            ),
           ],
         ),
       ),
