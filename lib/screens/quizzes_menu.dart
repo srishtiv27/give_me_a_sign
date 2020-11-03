@@ -33,7 +33,7 @@ class QuizzesMenu extends StatelessWidget {
                   ),
                 ),
                 Positioned(
-                  left: 40.0,
+                  left: 85.0,
                   bottom: 10.0,
                   child: Text(
                     'Alphabets',
