@@ -16,7 +16,7 @@ class FamilyMenu extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Text(
-                'Choose a colour',
+                'Family',
                 style: TextStyle(
                   fontSize: 35.0,
                   fontWeight: FontWeight.bold,
