@@ -5,19 +5,17 @@ class LearnCard extends StatelessWidget {
   final String label;
   final double left;
   final Color color;
-  final String path;
+  final Function onPressed;
   LearnCard(
       {this.image,
       this.label,
       this.left = 28.0,
       this.color = Colors.black,
-      this.path});
+      this.onPressed});
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        Navigator.pushNamed(context, path);
-      },
+      onTap: onPressed,
       child: Stack(
         children: [
           ClipRRect(
