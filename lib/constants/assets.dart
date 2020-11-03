@@ -154,7 +154,7 @@ const String kGoodByeIcon = 'assets/images/greetings/goodbye.png';
 const String kHowAreYouIcon = 'assets/images/greetings/how_are_you.png';
 const String kThankYouIcon = 'assets/images/greetings/thank_you.png';
 
-const String kAngryIcon = 'assets/images/emotions/angry.png';
-const String kHappyIcon = 'assets/images/emotions/happy.png';
-const String kSadIcon = 'assets/images/emotions/sad.png';
-const String kSorryIcon = 'assets/images/emotions/sorry.png';
+const String kAngryIcon = 'assets/images/emotions/angry_page.png';
+const String kHappyIcon = 'assets/images/emotions/happy_page.png';
+const String kSadIcon = 'assets/images/emotions/sad_page.png';
+const String kSorryIcon = 'assets/images/emotions/sorry_page.png';

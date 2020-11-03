@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:give_me_a_sign/widgets/learn_card.dart';
+import 'package:give_me_a_sign/models/cards.dart';
+import 'package:give_me_a_sign/screens/card_page.dart';
+import 'package:give_me_a_sign/constants/assets.dart';
 
 class EmotionsMenu extends StatelessWidget {
   static String id = 'emotions_menu';
@@ -30,6 +33,17 @@ class EmotionsMenu extends StatelessWidget {
                     label: 'Happy',
                     color: Color(0xFF244F9B),
                     left: 45.0,
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Happy',
+                              image: kHappyIcon,
+                              gif: kHappyGif),
+                        );
+                      }));
+                    },
                   ),
                   SizedBox(
                     width: 20.0,
@@ -39,6 +53,15 @@ class EmotionsMenu extends StatelessWidget {
                     label: 'Sad',
                     left: 58,
                     color: Color(0xFF94114D),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Sad', image: kSadIcon, gif: kSadGif),
+                        );
+                      }));
+                    },
                   )
                 ],
               ),
@@ -52,6 +75,17 @@ class EmotionsMenu extends StatelessWidget {
                     label: 'Sorry',
                     left: 50.0,
                     color: Color(0xFFC66934),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Sorry',
+                              image: kSorryIcon,
+                              gif: kSorryGif),
+                        );
+                      }));
+                    },
                   ),
                   SizedBox(
                     width: 20.0,
@@ -61,6 +95,17 @@ class EmotionsMenu extends StatelessWidget {
                     label: 'Angry',
                     left: 45,
                     color: Color(0XFF303382),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Angry',
+                              image: kAngryIcon,
+                              gif: kAngryGif),
+                        );
+                      }));
+                    },
                   )
                 ],
               ),

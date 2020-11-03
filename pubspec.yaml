@@ -42,18 +42,15 @@ flutter:
     - assets/images/colours_gifs/
     - assets/images/colour_splash/
     - assets/images/family_gifs/
-
-
-
     - assets/images/emotions_gifs/
-
-
     - assets/images/animals_gifs/
     - assets/images/food_gifs/
     - assets/images/greetings_gifs/
     - assets/images/greetings/
     - assets/images/food/
     - assets/images/family/
+    - assets/images/emotions/
+    - assets/images/animal/
 
 
 
