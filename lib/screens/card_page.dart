@@ -10,28 +10,33 @@ class CardPage extends StatelessWidget {
       backgroundColor: Color(0xFF272727),
       body: Padding(
         padding: EdgeInsets.only(left: 20.0, top: 60.0, right: 20.0),
-        child: Column(
-          children: <Widget>[
-            Text(
-              card.title,
-              style: TextStyle(
-                fontSize: 50.0,
-                fontWeight: FontWeight.bold,
-                color: Color(0xFFE4E3DF),
+        child: Center(
+          child: Column(
+            children: <Widget>[
+              Text(
+                card.title,
+                style: TextStyle(
+                  fontSize: 50.0,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xFFE4E3DF),
+                ),
               ),
-            ),
-            SizedBox(
-              height: 30.0,
-            ),
-            Image.asset(card.image),
-            SizedBox(
-              height: 30.0,
-            ),
-            Image.asset(
-              card.gif,
-              height: 350,
-            ),
-          ],
+              SizedBox(
+                height: 20.0,
+              ),
+              Image.asset(
+                card.image,
+                height: 200,
+              ),
+              SizedBox(
+                height: 30.0,
+              ),
+              Image.asset(
+                card.gif,
+                height: 400,
+              ),
+            ],
+          ),
         ),
       ),
     );

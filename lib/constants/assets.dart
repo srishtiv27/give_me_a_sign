@@ -69,3 +69,22 @@ const String kOctober = 'assets/images/months/October.gif';
 const String kNovember = 'assets/images/months/November.gif';
 const String kDecember = 'assets/images/months/December.gif';
 
+const String kVioletSplash = 'assets/images/colour_splash/violet_splash.png';
+const String kBlueSplash = 'assets/images/colour_splash/blue_splash.png';
+const String kGreenSplash = 'assets/images/colour_splash/green_splash.png';
+const String kYellowSplash = 'assets/images/colour_splash/yellow_splash.png';
+const String kOrangeSplash = 'assets/images/colour_splash/orange_splash.png';
+const String kRedSplash = 'assets/images/colour_splash/red_splash.png';
+const String kPinkSplash = 'assets/images/colour_splash/pink_splash.png';
+const String kWhiteSplash = 'assets/images/colour_splash/white_spash.png';
+const String kBlackSplash = 'assets/images/colour_splash/black_splash.png';
+
+const String kVioletGif = 'assets/images/colours_gifs/violet.gif';
+const String kBlueGif = 'assets/images/colours_gifs/blue.gif';
+const String kGreenGif = 'assets/images/colours_gifs/green.gif';
+const String kYellowGif = 'assets/images/colours_gifs/yellow.gif';
+const String kOrangeGif = 'assets/images/colours_gifs/orange.gif';
+const String kRedGif = 'assets/images/colours_gifs/red.gif';
+const String kPinkGif = 'assets/images/colours_gifs/pink.gif';
+const String kWhiteGif = 'assets/images/colours_gifs/white.gif';
+const String kBlackGif = 'assets/images/colours_gifs/black.gif';

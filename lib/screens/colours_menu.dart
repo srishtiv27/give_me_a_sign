@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:give_me_a_sign/constants/assets.dart';
 import 'package:give_me_a_sign/screens/card_page.dart';
 import 'package:give_me_a_sign/widgets/learn_card.dart';
 import 'package:give_me_a_sign/models/cards.dart';
@@ -38,9 +39,8 @@ class ColoursMenu extends StatelessWidget {
                         return CardPage(
                           card: Cards(
                               title: 'Violet',
-                              image:
-                                  'assets/images/colour_splash/violet_splash.png',
-                              gif: 'assets/images/colours_gifs/violet.gif'),
+                              image: kVioletSplash,
+                              gif: kVioletGif),
                         );
                       }));
                     },
@@ -53,6 +53,15 @@ class ColoursMenu extends StatelessWidget {
                     label: 'Blue',
                     left: 52,
                     color: Color(0xFF0F70D4),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Blue', image: kBlueSplash, gif: kBlueGif),
+                        );
+                      }));
+                    },
                   )
                 ],
               ),
@@ -66,6 +75,17 @@ class ColoursMenu extends StatelessWidget {
                     label: 'Green',
                     left: 48.0,
                     color: Color(0xFF1DD406),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Green',
+                              image: kGreenSplash,
+                              gif: kGreenGif),
+                        );
+                      }));
+                    },
                   ),
                   SizedBox(
                     width: 20.0,
@@ -75,6 +95,17 @@ class ColoursMenu extends StatelessWidget {
                     label: 'Yellow',
                     left: 45,
                     color: Color(0XFFD4BF00),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Yellow',
+                              image: kYellowSplash,
+                              gif: kYellowGif),
+                        );
+                      }));
+                    },
                   )
                 ],
               ),
@@ -88,6 +119,17 @@ class ColoursMenu extends StatelessWidget {
                     label: 'Orange',
                     left: 40.0,
                     color: Color(0xFFFF8A00),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Orange',
+                              image: kOrangeSplash,
+                              gif: kOrangeGif),
+                        );
+                      }));
+                    },
                   ),
                   SizedBox(
                     width: 20.0,
@@ -97,6 +139,15 @@ class ColoursMenu extends StatelessWidget {
                     label: 'Red',
                     color: Color(0xFFD40F0F),
                     left: 58,
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Red', image: kRedSplash, gif: kRedGif),
+                        );
+                      }));
+                    },
                   ),
                 ],
               ),
@@ -110,6 +161,15 @@ class ColoursMenu extends StatelessWidget {
                     label: 'Pink',
                     left: 52.0,
                     color: Color(0xFFFA33BD),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Pink', image: kPinkSplash, gif: kPinkGif),
+                        );
+                      }));
+                    },
                   ),
                   SizedBox(
                     width: 20.0,
@@ -119,6 +179,17 @@ class ColoursMenu extends StatelessWidget {
                     label: 'White',
                     left: 45.0,
                     color: Colors.white,
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'White',
+                              image: kWhiteSplash,
+                              gif: kWhiteGif),
+                        );
+                      }));
+                    },
                   ),
                 ],
               ),
@@ -130,6 +201,14 @@ class ColoursMenu extends StatelessWidget {
                 label: 'Black',
                 left: 48,
                 color: Color(0xFF2D3644),
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return CardPage(
+                      card: Cards(
+                          title: 'Black', image: kBlackSplash, gif: kBlackGif),
+                    );
+                  }));
+                },
               )
             ],
           ),
