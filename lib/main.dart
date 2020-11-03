@@ -14,6 +14,7 @@ import 'package:give_me_a_sign/screens/learn_menu.dart';
 import 'package:give_me_a_sign/screens/menu_page.dart';
 import 'package:give_me_a_sign/screens/numbers_page.dart';
 import 'package:give_me_a_sign/screens/months_page.dart';
+import 'package:give_me_a_sign/screens/quizzes_menu.dart';
 import 'package:give_me_a_sign/screens/resources_menu.dart';
 
 void main() {
@@ -43,6 +44,7 @@ class GiveMeASign extends StatelessWidget {
         ResourcesMenu.id: (context) => ResourcesMenu(),
         EtiquettesPage.id: (context) => EtiquettesPage(),
         CommunicationTipsPage.id: (context) => CommunicationTipsPage(),
+        QuizzesMenu.id: (context) => QuizzesMenu(),
       },
     );
   }
