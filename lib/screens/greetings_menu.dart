@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:give_me_a_sign/widgets/learn_card.dart';
+import 'package:give_me_a_sign/models/cards.dart';
+import 'package:give_me_a_sign/constants/assets.dart';
+import 'package:give_me_a_sign/screens/card_page.dart';
 
 class GreetingsMenu extends StatelessWidget {
   static String id = 'greetings_menu';
@@ -30,6 +33,15 @@ class GreetingsMenu extends StatelessWidget {
                     label: 'Hello',
                     color: Color(0xFF945809),
                     left: 52.0,
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Hello', image: kHelloIcon, gif: kHello),
+                        );
+                      }));
+                    },
                   ),
                   SizedBox(
                     width: 20.0,
@@ -39,6 +51,15 @@ class GreetingsMenu extends StatelessWidget {
                     label: 'Bye',
                     left: 62,
                     color: Color(0xFFBD1A29),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Bye', image: kGoodByeIcon, gif: kGoodbye),
+                        );
+                      }));
+                    },
                   )
                 ],
               ),
@@ -52,15 +73,37 @@ class GreetingsMenu extends StatelessWidget {
                     label: 'Good Morning',
                     left: 10.0,
                     color: Color(0xFFD8A92E),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Good Morning',
+                              image: kGoodMorningIcon,
+                              gif: kGoodMorning),
+                        );
+                      }));
+                    },
                   ),
                   SizedBox(
                     width: 20.0,
                   ),
                   LearnCard(
                     image: 'assets/images/greetings_cards/good_evening.png',
-                    label: 'Good Evening',
-                    left: 13,
+                    label: 'Good Afternoon',
+                    left: 5,
                     color: Color(0XFFF44020),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Good Afternoon',
+                              image: kGoodAfternoonIcon,
+                              gif: kGoodAfternoon),
+                        );
+                      }));
+                    },
                   )
                 ],
               ),
@@ -74,6 +117,17 @@ class GreetingsMenu extends StatelessWidget {
                     label: 'Good Night',
                     left: 22.0,
                     color: Color(0xFF3B2704),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Good Night',
+                              image: kGoodNightIcon,
+                              gif: kGoodNight),
+                        );
+                      }));
+                    },
                   ),
                   SizedBox(
                     width: 20.0,
@@ -83,6 +137,17 @@ class GreetingsMenu extends StatelessWidget {
                     label: 'How are you?',
                     color: Color(0xFFF44020),
                     left: 12,
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'How are you?',
+                              image: kHowAreYouIcon,
+                              gif: kHowAreYou),
+                        );
+                      }));
+                    },
                   ),
                 ],
               ),
@@ -96,6 +161,17 @@ class GreetingsMenu extends StatelessWidget {
                     label: 'All the best',
                     left: 25.0,
                     color: Color(0xFF071B4D),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'All The Best',
+                              image: kAllTheBestIcon,
+                              gif: kAllTheBest),
+                        );
+                      }));
+                    },
                   ),
                   SizedBox(
                     width: 20.0,
@@ -105,6 +181,17 @@ class GreetingsMenu extends StatelessWidget {
                     label: 'Thank You',
                     left: 25.0,
                     color: Color(0xFF234938),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Thank You',
+                              image: kThankYouIcon,
+                              gif: kThankYou),
+                        );
+                      }));
+                    },
                   ),
                 ],
               ),

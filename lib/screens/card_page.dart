@@ -16,7 +16,7 @@ class CardPage extends StatelessWidget {
               Text(
                 card.title,
                 style: TextStyle(
-                  fontSize: 50.0,
+                  fontSize: 40.0,
                   fontWeight: FontWeight.bold,
                   color: Color(0xFFE4E3DF),
                 ),
