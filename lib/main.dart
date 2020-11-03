@@ -12,12 +12,14 @@ import 'package:give_me_a_sign/screens/etiquettes_page.dart';
 import 'package:give_me_a_sign/screens/family_menu.dart';
 import 'package:give_me_a_sign/screens/food_menu.dart';
 import 'package:give_me_a_sign/screens/greetings_menu.dart';
+import 'package:give_me_a_sign/screens/greetings_quiz.dart';
 import 'package:give_me_a_sign/screens/learn_menu.dart';
 import 'package:give_me_a_sign/screens/menu_page.dart';
 import 'package:give_me_a_sign/screens/numbers_page.dart';
 import 'package:give_me_a_sign/screens/months_page.dart';
 import 'package:give_me_a_sign/screens/quizzes_menu.dart';
 import 'package:give_me_a_sign/screens/resources_menu.dart';
+import 'package:give_me_a_sign/screens/greetings_quiz.dart';
 
 void main() {
   runApp(GiveMeASign());
@@ -48,7 +50,8 @@ class GiveMeASign extends StatelessWidget {
         CommunicationTipsPage.id: (context) => CommunicationTipsPage(),
         QuizzesMenu.id: (context) => QuizzesMenu(),
         AlphabetsQuiz.id: (context) => AlphabetsQuiz(),
-        ChallengeQuiz.id: (context) => ChallengeQuiz()
+        ChallengeQuiz.id: (context) => ChallengeQuiz(),
+        GreetingsQuiz.id: (context) => GreetingsQuiz(),
       },
     );
   }

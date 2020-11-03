@@ -115,6 +115,36 @@ class QuizBrain {
     'August'
   ];
 
+  List<String> greetingsOption1 = [
+    'Good Evening',
+    'All the best',
+    'Thank You',
+    'Good Morning',
+    'All the Best',
+    'How are you?',
+    'Thank You',
+    'Hello',
+  ];
+  List<String> greetingsOption2 = [
+    'Good Afternoon',
+    'Hello',
+    'How are you?',
+    'All the best',
+    'Goodbye',
+    'Thank You',
+    'Good Morning',
+    'Goodbye',
+  ];
+  List<String> greetingsOption3 = [
+    'Thank You',
+    'Good Night',
+    'Hello',
+    'Good Night',
+    'Good Afternoon',
+    'Goodbye',
+    'Hello',
+    'Good Morning',
+  ];
   void nextQuestion(List<Question> questionBank) {
     if (questionNumber < questionBank.length - 1) {
       questionNumber++;
