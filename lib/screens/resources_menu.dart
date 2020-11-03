@@ -42,7 +42,7 @@ class ResourcesMenu extends StatelessWidget {
                       fontSize: 40,
                       fontWeight: FontWeight.bold,
                       fontFamily: 'Lobster',
-                      color: Color(0xFF3D3D2A),
+                      color: Color(0xFF2F4040),
                     ),
                   ),
                 )
