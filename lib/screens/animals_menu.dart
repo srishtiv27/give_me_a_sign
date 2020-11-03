@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:give_me_a_sign/constants/assets.dart';
+import 'package:give_me_a_sign/screens/card_page.dart';
 import 'package:give_me_a_sign/widgets/learn_card.dart';
+import 'package:give_me_a_sign/models/cards.dart';
 
 class AnimalsMenu extends StatelessWidget {
   static String id = 'animals_menu';
@@ -30,6 +33,15 @@ class AnimalsMenu extends StatelessWidget {
                     label: 'Dog',
                     color: Color(0xFF543603),
                     left: 55.0,
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Dog', image: kDogIcon, gif: kDogGif),
+                        );
+                      }));
+                    },
                   ),
                   SizedBox(
                     width: 20.0,
@@ -39,6 +51,15 @@ class AnimalsMenu extends StatelessWidget {
                     label: 'Cat',
                     left: 60,
                     color: Color(0xFF9F5905),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Cat', image: kCatIcon, gif: kCatGif),
+                        );
+                      }));
+                    },
                   )
                 ],
               ),
@@ -52,6 +73,15 @@ class AnimalsMenu extends StatelessWidget {
                     label: 'Bird',
                     left: 55.0,
                     color: Color(0xFF2D225B),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Bird', image: kBirdIcon, gif: kBirdGif),
+                        );
+                      }));
+                    },
                   ),
                   SizedBox(
                     width: 20.0,
@@ -61,6 +91,15 @@ class AnimalsMenu extends StatelessWidget {
                     label: 'Fish',
                     left: 58,
                     color: Color(0XFF2D3D59),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Fish', image: kFishIcon, gif: kFishGif),
+                        );
+                      }));
+                    },
                   )
                 ],
               ),

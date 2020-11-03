@@ -140,10 +140,10 @@ const String kMilkIcon = 'assets/images/food/milk_page.png';
 const String kSamosaIcon = 'assets/images/food/samosa_page.png';
 const String kWaterIcon = 'assets/images/food/water_page.png';
 
-const String kDogIcon = 'assets/images/animal/dog.png';
-const String kCatIcon = 'assets/images/animal/cat.png';
-const String kBirdIcon = 'assets/images/animal/bird.png';
-const String kFishIcon = 'assets/images/animal/fish.png';
+const String kDogIcon = 'assets/images/animal/dog_page.png';
+const String kCatIcon = 'assets/images/animal/cat_page.png';
+const String kBirdIcon = 'assets/images/animal/bird_page.png';
+const String kFishIcon = 'assets/images/animal/fish_page.png';
 
 const String kHelloIcon = 'assets/images/greetings/hello.png';
 const String kAllTheBestIcon = 'assets/images/greetings/all_the_best.png';
