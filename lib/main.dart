@@ -5,6 +5,7 @@ import 'package:give_me_a_sign/screens/colours_menu.dart';
 import 'package:give_me_a_sign/screens/days_and_months_menu.dart';
 import 'package:give_me_a_sign/screens/days_page.dart';
 import 'package:give_me_a_sign/screens/emotions_menu.dart';
+import 'package:give_me_a_sign/screens/etiquettes_page.dart';
 import 'package:give_me_a_sign/screens/family_menu.dart';
 import 'package:give_me_a_sign/screens/food_menu.dart';
 import 'package:give_me_a_sign/screens/greetings_menu.dart';
@@ -39,6 +40,7 @@ class GiveMeASign extends StatelessWidget {
         EmotionsMenu.id: (context) => EmotionsMenu(),
         GreetingsMenu.id: (context) => GreetingsMenu(),
         ResourcesMenu.id: (context) => ResourcesMenu(),
+        EtiquettesPage.id: (context) => EtiquettesPage(),
       },
     );
   }
