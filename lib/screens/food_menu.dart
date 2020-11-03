@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:give_me_a_sign/widgets/learn_card.dart';
+import 'package:give_me_a_sign/models/cards.dart';
+import 'package:give_me_a_sign/screens/card_page.dart';
+import 'package:give_me_a_sign/constants/assets.dart';
 
 class FoodMenu extends StatelessWidget {
   static String id = 'food_menu';
@@ -30,6 +33,17 @@ class FoodMenu extends StatelessWidget {
                     label: 'Water',
                     color: Color(0xFF304C82),
                     left: 45.0,
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Water',
+                              image: kWaterIcon,
+                              gif: kWaterGif),
+                        );
+                      }));
+                    },
                   ),
                   SizedBox(
                     width: 20.0,
@@ -39,6 +53,17 @@ class FoodMenu extends StatelessWidget {
                     label: 'Apple',
                     left: 52,
                     color: Color(0xFFAF4747),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Apple',
+                              image: kAppleIcon,
+                              gif: kAppleGif),
+                        );
+                      }));
+                    },
                   )
                 ],
               ),
@@ -52,6 +77,17 @@ class FoodMenu extends StatelessWidget {
                     label: 'Banana',
                     left: 37.0,
                     color: Color(0xFF866100),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Banana',
+                              image: kBananaIcon,
+                              gif: kBananaGif),
+                        );
+                      }));
+                    },
                   ),
                   SizedBox(
                     width: 20.0,
@@ -61,6 +97,15 @@ class FoodMenu extends StatelessWidget {
                     label: 'Milk',
                     left: 55,
                     color: Color(0XFF0069A8),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Milk', image: kMilkIcon, gif: kMilkGif),
+                        );
+                      }));
+                    },
                   )
                 ],
               ),
@@ -74,6 +119,17 @@ class FoodMenu extends StatelessWidget {
                     label: 'Samosa',
                     left: 40.0,
                     color: Color(0xFF9F5906),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Samosa',
+                              image: kSamosaIcon,
+                              gif: kSamosaGif),
+                        );
+                      }));
+                    },
                   ),
                   SizedBox(
                     width: 20.0,
@@ -83,6 +139,17 @@ class FoodMenu extends StatelessWidget {
                     label: 'Ice Cream',
                     color: Color(0xFF794C00),
                     left: 33,
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Ice Icream',
+                              image: kIceCreamIcon,
+                              gif: kIceCreamGif),
+                        );
+                      }));
+                    },
                   ),
                 ],
               ),
@@ -96,6 +163,17 @@ class FoodMenu extends StatelessWidget {
                     label: 'Bread',
                     left: 48.0,
                     color: Color(0xFF765F3F),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Bread',
+                              image: kBreadIcon,
+                              gif: kBreadGif),
+                        );
+                      }));
+                    },
                   ),
                   SizedBox(
                     width: 20.0,
@@ -105,6 +183,15 @@ class FoodMenu extends StatelessWidget {
                     label: 'Cake',
                     left: 55.0,
                     color: Color(0xFFCD3838),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CardPage(
+                          card: Cards(
+                              title: 'Cake', image: kCakeIcon, gif: kCakeGif),
+                        );
+                      }));
+                    },
                   ),
                 ],
               ),

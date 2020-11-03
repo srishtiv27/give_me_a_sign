@@ -105,14 +105,14 @@ const String kHowAreYou = 'assets/images/greetings_gifs/how_are_you.gif';
 const String kThankYou = 'assets/images/greetings_gifs/thankyou.gif';
 const String kGoodNight = 'assets/images/greetings_gifs/goodnight.gif';
 
-const String kApple = 'assets/images/food_gifs/apple.gif';
-const String kBanana = 'assets/images/food_gifs/Banana.gif';
-const String kBread = 'assets/images/food_gifs/bread.gif';
-const String kCake = 'assets/images/food_gifs/cake.gif';
-const String kIceCream = 'assets/images/food_gifs/Icecream.gif';
-const String kMilk = 'assets/images/food_gifs/milk.gif';
-const String kSamosa = 'assets/images/food_gifs/samosa.gif';
-const String kWater = 'assets/images/food_gifs/water.gif';
+const String kAppleGif = 'assets/images/food_gifs/apple.gif';
+const String kBananaGif = 'assets/images/food_gifs/Banana.gif';
+const String kBreadGif = 'assets/images/food_gifs/bread.gif';
+const String kCakeGif = 'assets/images/food_gifs/cake.gif';
+const String kIceCreamGif = 'assets/images/food_gifs/Icecream.gif';
+const String kMilkGif = 'assets/images/food_gifs/milk.gif';
+const String kSamosaGif = 'assets/images/food_gifs/samosa.gif';
+const String kWaterGif = 'assets/images/food_gifs/Water.gif';
 
 const String kDogGif = 'assets/images/animals_gifs/dog.gif';
 const String kCatGif = 'assets/images/animals_gifs/cat.gif';
