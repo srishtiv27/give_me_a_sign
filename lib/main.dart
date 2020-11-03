@@ -22,7 +22,7 @@ class GiveMeASign extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Give Me a Sign',
-      initialRoute: GreetingsMenu.id,
+      initialRoute: MenuPage.id,
       routes: {
         MenuPage.id: (context) => MenuPage(),
         LearnMenu.id: (context) => LearnMenu(),
