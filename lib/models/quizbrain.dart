@@ -65,6 +65,16 @@ class QuizBrain {
     Question(questionImage: kGreenGif, questionAnswer: 'Green'),
     Question(questionImage: kCatGif, questionAnswer: 'Cat'),
   ];
+  List<Question> greetingsQuestionBank = [
+    Question(questionImage: kGoodAfternoon, questionAnswer: 'Good Afternoon'),
+    Question(questionImage: kAllTheBest, questionAnswer: 'All the best'),
+    Question(questionImage: kHello, questionAnswer: 'Hello'),
+    Question(questionImage: kGoodNight, questionAnswer: 'Good Night'),
+    Question(questionImage: kGoodbye, questionAnswer: 'Goodbye'),
+    Question(questionImage: kHowAreYou, questionAnswer: 'How are you?'),
+    Question(questionImage: kThankYou, questionAnswer: 'Thank You'),
+    Question(questionImage: kGoodMorning, questionAnswer: 'Good Morning'),
+  ];
 
   List<String> challengeOption1 = [
     'Grandmother',
