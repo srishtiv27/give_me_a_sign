@@ -88,3 +88,10 @@ const String kRedGif = 'assets/images/colours_gifs/red.gif';
 const String kPinkGif = 'assets/images/colours_gifs/pink.gif';
 const String kWhiteGif = 'assets/images/colours_gifs/white.gif';
 const String kBlackGif = 'assets/images/colours_gifs/black.gif';
+
+const String kBrotherGif = 'assets/images/family_gifs/brother.gif';
+const String kFatherGif = 'assets/images/family_gifs/father.gif';
+const String kGrandFatherGif = 'assets/images/family_gifs/grandfather.gif';
+const String kGrandMotherGif = 'assets/images/family_gifs/grandmother.gif';
+const String kMotherGif = 'assets/images/family_gifs/mother.gif';
+const String kSisterGif = 'assets/images/family_gifs/sister.gif';
