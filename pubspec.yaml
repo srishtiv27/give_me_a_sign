@@ -44,7 +44,19 @@ flutter:
     - assets/images/family_gifs/
 
 
+
     - assets/images/emotions_gifs/
+
+    - assets/images/animals_gifs/
+
+    - assets/images/food_gifs/
+    - assets/images/greetings_gifs/
+    - assets/images/greetings/
+    - assets/images/food/
+
+
+
+
   fonts:
     - family: Lobster
       fonts:
