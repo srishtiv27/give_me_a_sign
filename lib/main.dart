@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:give_me_a_sign/screens/alphabets_page.dart';
 import 'package:give_me_a_sign/screens/animals_menu.dart';
 import 'package:give_me_a_sign/screens/colours_menu.dart';
+import 'package:give_me_a_sign/screens/communication_tips_page.dart';
 import 'package:give_me_a_sign/screens/days_and_months_menu.dart';
 import 'package:give_me_a_sign/screens/days_page.dart';
 import 'package:give_me_a_sign/screens/emotions_menu.dart';
@@ -41,6 +42,7 @@ class GiveMeASign extends StatelessWidget {
         GreetingsMenu.id: (context) => GreetingsMenu(),
         ResourcesMenu.id: (context) => ResourcesMenu(),
         EtiquettesPage.id: (context) => EtiquettesPage(),
+        CommunicationTipsPage.id: (context) => CommunicationTipsPage(),
       },
     );
   }

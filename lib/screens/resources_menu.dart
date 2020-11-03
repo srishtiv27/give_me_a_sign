@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:give_me_a_sign/screens/communication_tips_page.dart';
 import 'package:give_me_a_sign/screens/etiquettes_page.dart';
 
 class ResourcesMenu extends StatelessWidget {
@@ -57,30 +58,35 @@ class ResourcesMenu extends StatelessWidget {
             SizedBox(
               height: 40.0,
             ),
-            Stack(
-              children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                  child: Image.asset(
-                    'assets/images/resources/communication_tips.png',
-                    height: 270,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-                Positioned(
-                  bottom: 10.0,
-                  left: 10,
-                  child: Text(
-                    'Communication Tips',
-                    style: TextStyle(
-                      fontSize: 40,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'Lobster',
-                      color: Color(0xFF3D3D2A),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, CommunicationTipsPage.id);
+              },
+              child: Stack(
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                    child: Image.asset(
+                      'assets/images/resources/communication_tips.png',
+                      height: 270,
+                      fit: BoxFit.cover,
                     ),
                   ),
-                )
-              ],
+                  Positioned(
+                    bottom: 10.0,
+                    left: 10,
+                    child: Text(
+                      'Communication Tips',
+                      style: TextStyle(
+                        fontSize: 40,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Lobster',
+                        color: Color(0xFF3D3D2A),
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
           ],
         ),
