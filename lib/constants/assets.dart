@@ -158,3 +158,14 @@ const String kAngryIcon = 'assets/images/emotions/angry_page.png';
 const String kHappyIcon = 'assets/images/emotions/happy_page.png';
 const String kSadIcon = 'assets/images/emotions/sad_page.png';
 const String kSorryIcon = 'assets/images/emotions/sorry_page.png';
+
+const String kQuizC = 'assets/images/quizzes/alphabets/C.png';
+const String kQuizD = 'assets/images/quizzes/alphabets/D.png';
+const String kQuizE = 'assets/images/quizzes/alphabets/E.png';
+const String kQuizG = 'assets/images/quizzes/alphabets/G.png';
+const String kQuizK = 'assets/images/quizzes/alphabets/K.png';
+const String kQuizM = 'assets/images/quizzes/alphabets/M.png';
+const String kQuizO = 'assets/images/quizzes/alphabets/O.png';
+const String kQuizQ = 'assets/images/quizzes/alphabets/Q.png';
+const String kQuizT = 'assets/images/quizzes/alphabets/T.png';
+const String kQuizU = 'assets/images/quizzes/alphabets/U.png';

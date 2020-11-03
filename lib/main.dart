@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:give_me_a_sign/screens/alphabets_page.dart';
+import 'package:give_me_a_sign/screens/alphabets_quiz.dart';
 import 'package:give_me_a_sign/screens/animals_menu.dart';
 import 'package:give_me_a_sign/screens/colours_menu.dart';
 import 'package:give_me_a_sign/screens/communication_tips_page.dart';
@@ -45,6 +46,7 @@ class GiveMeASign extends StatelessWidget {
         EtiquettesPage.id: (context) => EtiquettesPage(),
         CommunicationTipsPage.id: (context) => CommunicationTipsPage(),
         QuizzesMenu.id: (context) => QuizzesMenu(),
+        AlphabetsQuiz.id: (context) => AlphabetsQuiz(),
       },
     );
   }

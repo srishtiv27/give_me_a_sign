@@ -1,60 +1,207 @@
 import 'package:flutter/material.dart';
 import 'package:give_me_a_sign/models/quizbrain.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
+import 'package:give_me_a_sign/widgets/options_button.dart';
+import 'package:give_me_a_sign/models/buttons.dart';
+import 'package:give_me_a_sign/screens/quizzes_menu.dart';
 
 QuizBrain quizBrain = QuizBrain();
 
 class AlphabetsQuiz extends StatefulWidget {
+  static String id = 'alphabets_quiz';
   @override
   _AlphabetsQuizState createState() => _AlphabetsQuizState();
 }
 
 class _AlphabetsQuizState extends State<AlphabetsQuiz> {
-//  List<Icon> scoreKeeper = [];
-//  void checkAnswer(String userPickedAnswer) {
-//    String correctAnswer = quizBrain.getCorrectAnswer(_alphabets);
-//
-//    setState(() {
-//      //On the next line, you can also use if (quizBrain.isFinished()) {}, it does the same thing.
-//      if (quizBrain.isFinished() == true) {
-//        //TODO Step 4 Part A - show an alert using rFlutter_alert,
-//
-//        //This is the code for the basic alert from the docs for rFlutter Alert:
-//        //Alert(context: context, title: "RFLUTTER", desc: "Flutter is awesome.").show();
-//
-//        //Modified for our purposes:
-//        Alert(
-//          context: context,
-//          title: 'Finished!',
-//          desc: 'You\'ve reached the end of the quiz.',
-//        ).show();
-//
-//        //TODO Step 4 Part C - reset the questionNumber,
-//        quizBrain.reset();
-//
-//        //TODO Step 4 Part D - empty out the scoreKeeper.
-//        scoreKeeper = [];
-//      }
-//
-//      //TODO: Step 6 - If we've not reached the end, ELSE do the answer checking steps below 👇
-//      else {
-//        if (userPickedAnswer == correctAnswer) {
-//          scoreKeeper.add(Icon(
-//            Icons.check,
-//            color: Colors.green,
-//          ));
-//        } else {
-//          scoreKeeper.add(Icon(
-//            Icons.close,
-//            color: Colors.red,
-//          ));
-//        }
-//        quizBrain.nextQuestion();
-//      }
-//    });
-//  }
+  int scoreKeeper = 0;
+  Button button1 = Button(
+      label: quizBrain.alphabetsOption1[quizBrain.questionNumber],
+      color: Color(0xFF42436B));
+  Button button2 = Button(
+      label: quizBrain.alphabetsOption2[quizBrain.questionNumber],
+      color: Color(0xFF42436B));
+  Button button3 = Button(
+      label: quizBrain.alphabetsOption3[quizBrain.questionNumber],
+      color: Color(0xFF42436B));
+
+  void checkAnswer(Button button) {
+    String userPickedAnswer = button.label;
+    String correctAnswer =
+        quizBrain.getCorrectAnswer(quizBrain.alphabetsQuestionBank);
+    setState(() {
+      if (userPickedAnswer == correctAnswer) {
+        setState(() {
+          button.color = Colors.green;
+        });
+        scoreKeeper++;
+      } else {
+        setState(() {
+          button.color = Colors.red;
+          if (button1.label == correctAnswer) {
+            setState(() {
+              button1.color = Colors.green;
+            });
+          } else if (button2.label == correctAnswer) {
+            setState(() {
+              button2.color = Colors.green;
+            });
+          } else {
+            setState(() {
+              button3.color = Colors.green;
+            });
+          }
+        });
+      }
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: Color(0xFF272727),
+      body: Padding(
+        padding: EdgeInsets.only(left: 20.0, top: 60.0, right: 20.0),
+        child: Column(
+          children: <Widget>[
+            Center(
+              child: Text(
+                'Guess The Alphabet',
+                style: TextStyle(
+                  fontSize: 30.0,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xFFE4E3DF),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 30.0,
+            ),
+            Center(
+              child: ClipRRect(
+                borderRadius: BorderRadius.all(Radius.circular(20)),
+                child: Image.asset(
+                  quizBrain.getQuestionImage(quizBrain.alphabetsQuestionBank),
+                  height: 275,
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 30.0,
+            ),
+            OptionButton(
+              label: button1.label,
+              color: button1.color,
+              onPressed: button1.enabled
+                  ? () {
+                      checkAnswer(button1);
+                      setState(() {
+                        button2.enabled = false;
+                        button3.enabled = false;
+                      });
+                    }
+                  : null,
+            ),
+            SizedBox(
+              height: 30.0,
+            ),
+            OptionButton(
+              label: button2.label,
+              color: button2.color,
+              onPressed: button2.enabled
+                  ? () {
+                      checkAnswer(button2);
+                      setState(() {
+                        button1.enabled = false;
+                        button3.enabled = false;
+                      });
+                    }
+                  : null,
+            ),
+            SizedBox(
+              height: 30.0,
+            ),
+            OptionButton(
+              label: button3.label,
+              color: button3.color,
+              onPressed: button3.enabled
+                  ? () {
+                      checkAnswer(button3);
+                      setState(() {
+                        button1.enabled = false;
+                        button2.enabled = false;
+                      });
+                    }
+                  : null,
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            FlatButton(
+              child: Text(
+                'Next',
+                style: TextStyle(color: Color(0xFFE4E3DF)),
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(18),
+                side: BorderSide(color: Color(0xFFE4E3DF)),
+              ),
+              onPressed: () {
+                setState(() {
+                  if (quizBrain.isFinished(quizBrain.alphabetsQuestionBank)) {
+                    Alert(
+                      closeFunction: () {
+                        Navigator.pop(context);
+                        Navigator.pop(context);
+                        Navigator.pop(context);
+                        Navigator.pushNamed(context, QuizzesMenu.id);
+                      },
+                      buttons: [
+                        DialogButton(
+                          child: Text(
+                            'Cancel',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18.0,
+                            ),
+                          ),
+                          onPressed: () {
+                            Navigator.pop(context);
+                            Navigator.pop(context);
+                            Navigator.pop(context);
+                            Navigator.pushNamed(context, QuizzesMenu.id);
+                          },
+                          color: Colors.blueAccent,
+                        ),
+                      ],
+                      onWillPopActive: true,
+                      context: context,
+                      title: 'Finished!',
+                      desc:
+                          'You\'ve reached the end of the quiz. Your score was $scoreKeeper out of ${quizBrain.alphabetsQuestionBank.length}',
+                    ).show();
+                    quizBrain.reset();
+                    scoreKeeper = 0;
+                  }
+                  quizBrain.nextQuestion(quizBrain.alphabetsQuestionBank);
+                  button1.enabled = true;
+                  button2.enabled = true;
+                  button3.enabled = true;
+                  button1.color = Color(0xFF42436B);
+                  button2.color = Color(0xFF42436B);
+                  button3.color = Color(0xFF42436B);
+                  button1.label =
+                      quizBrain.alphabetsOption1[quizBrain.questionNumber];
+                  button2.label =
+                      quizBrain.alphabetsOption2[quizBrain.questionNumber];
+                  button3.label =
+                      quizBrain.alphabetsOption3[quizBrain.questionNumber];
+                });
+              },
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

@@ -2,38 +2,76 @@ import 'question.dart';
 import 'package:give_me_a_sign/constants/assets.dart';
 
 class QuizBrain {
-  int _questionNumber = 0;
-  List<Question> _alphabetsQuestionBank = [
-    Question(questionImage: kC, questionAnswer: 'C'),
-    Question(questionImage: kO, questionAnswer: 'O'),
-    Question(questionImage: kE, questionAnswer: 'E'),
-    Question(questionImage: kU, questionAnswer: 'U'),
-    Question(questionImage: kD, questionAnswer: 'D'),
-    Question(questionImage: kT, questionAnswer: 'T'),
-    Question(questionImage: kK, questionAnswer: 'K'),
-    Question(questionImage: kQ, questionAnswer: 'Q'),
-    Question(questionImage: kM, questionAnswer: 'M'),
-    Question(questionImage: kG, questionAnswer: 'G'),
+  int questionNumber = 0;
+  List<Question> alphabetsQuestionBank = [
+    Question(questionImage: kQuizC, questionAnswer: 'C'),
+    Question(questionImage: kQuizO, questionAnswer: 'O'),
+    Question(questionImage: kQuizE, questionAnswer: 'E'),
+    Question(questionImage: kQuizU, questionAnswer: 'U'),
+    Question(questionImage: kQuizD, questionAnswer: 'D'),
+    Question(questionImage: kQuizT, questionAnswer: 'T'),
+    Question(questionImage: kQuizK, questionAnswer: 'K'),
+    Question(questionImage: kQuizQ, questionAnswer: 'Q'),
+    Question(questionImage: kQuizM, questionAnswer: 'M'),
+    Question(questionImage: kQuizG, questionAnswer: 'G'),
   ];
-  void nextQuestion(List<Question> _questionBank) {
-    if (_questionNumber < _questionBank.length - 1) {
-      _questionNumber++;
+
+  List<String> alphabetsOption1 = [
+    'C',
+    'O',
+    'R',
+    'L',
+    'E',
+    'T',
+    'L',
+    'Q',
+    'P',
+    'T'
+  ];
+  List<String> alphabetsOption2 = [
+    'H',
+    'C',
+    'E',
+    'K',
+    'D',
+    'Q',
+    'B',
+    'U',
+    'M',
+    'J'
+  ];
+  List<String> alphabetsOption3 = [
+    'O',
+    'Q',
+    'M',
+    'U',
+    'I',
+    'S',
+    'K',
+    'A',
+    'O',
+    'G'
+  ];
+
+  void nextQuestion(List<Question> questionBank) {
+    if (questionNumber < questionBank.length - 1) {
+      questionNumber++;
     }
   }
 
-  String getQuestionImage(List<Question> _questionBank) {
-    return _questionBank[_questionNumber].questionImage;
+  String getQuestionImage(List<Question> questionBank) {
+    return questionBank[questionNumber].questionImage;
   }
 
-  String getCorrectAnswer(List<Question> _questionBank) {
-    return _questionBank[_questionNumber].questionAnswer;
+  String getCorrectAnswer(List<Question> questionBank) {
+    return questionBank[questionNumber].questionAnswer;
   }
 
-  bool isFinished(List<Question> _questionBank) {
-    return (_questionNumber >= _questionBank.length - 1);
+  bool isFinished(List<Question> questionBank) {
+    return (questionNumber >= questionBank.length - 1);
   }
 
   void reset() {
-    _questionNumber = 0;
+    questionNumber = 0;
   }
 }
