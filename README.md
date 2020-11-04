@@ -30,6 +30,9 @@ Often schools are not capable of supplying their deaf or hard-of-hearing student
 ## Colours Menu 
 <img src="https://github.com/srishtiv27/give_me_a_sign/blob/main/screenshots/colours_menu1.png" width="200" height="420"/> <img src="https://github.com/srishtiv27/give_me_a_sign/blob/main/screenshots/colours_menu2.png" width="200" height="420" />
 
+## Colours Page
+<img src="https://github.com/srishtiv27/give_me_a_sign/blob/main/screenshots/pink.png" width="200" height="420"/> <img src="https://github.com/srishtiv27/give_me_a_sign/blob/main/screenshots/yellow.png" width="200" height="420" />
+
 ## Family Menu
 <img src="https://github.com/srishtiv27/give_me_a_sign/blob/main/screenshots/family_menu.png" width="200" height="420" />
 
@@ -59,6 +62,33 @@ Often schools are not capable of supplying their deaf or hard-of-hearing student
 
 ## Emotions Page
 <img src="https://github.com/srishtiv27/give_me_a_sign/blob/main/screenshots/happy_page.png" width="200" height="420" /> <img src="https://github.com/srishtiv27/give_me_a_sign/blob/main/screenshots/sad_page.png" width="200" height="420" />
+
+## Quiz Menu
+<img src="https://github.com/srishtiv27/give_me_a_sign/blob/main/screenshots/quizzes_menu.png" width="200" height="420" />
+
+## Alphabets Quiz
+<img src="https://github.com/srishtiv27/give_me_a_sign/blob/main/screenshots/alphabets_quiz.png" width="200" height="420" />
+
+## Greetings Quiz
+<img src="https://github.com/srishtiv27/give_me_a_sign/blob/main/screenshots/greetings_quiz.png" width="200" height="420" />
+
+## Challenge Quiz
+<img src="https://github.com/srishtiv27/give_me_a_sign/blob/main/screenshots/challenge_quiz.png" width="200" height="420" />
+
+## Score Alert
+<img src="https://github.com/srishtiv27/give_me_a_sign/blob/main/screenshots/score_alert.png" width="200" height="420" />
+
+## Resources Menu
+<img src="https://github.com/srishtiv27/give_me_a_sign/blob/main/screenshots/resources_menu.png" width="200" height="420" />
+
+## Etiquettes Page
+<img src="https://github.com/srishtiv27/give_me_a_sign/blob/main/screenshots/etiquettes_page.png" width="200" height="420" />
+
+## Communication Tips Page
+<img src="https://github.com/srishtiv27/give_me_a_sign/blob/main/screenshots/communication_tips_page.png" width="200" height="420" />
+
+
+
 
 
 
